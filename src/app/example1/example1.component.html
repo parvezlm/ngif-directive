@@ -1,0 +1,29 @@
+<section class="examOne boxs examcomm">
+	<div class="container">
+		<div class="inner">
+			<h2>ngIf directives example</h2>
+			<span *ngIf='boxitem then box1 else box2'></span>
+			<div class="row">
+				<div class="col-sm-6">
+					<ng-template #box1>
+						<div class="wraper boxs" [ngClass]="clsbind">
+							<h3>This is box one</h3>
+						</div>
+					</ng-template>
+				</div>
+				<div class="col-sm-6">
+					<ng-template #box2>
+						<div class="wraper boxs boxs22" [ngClass]="clsbind2">
+							<h3 [ngClass]="chngstyle">{{ strval1 }}</h3>
+						</div>
+					</ng-template>
+				</div>
+			</div>
+			<button type="button" class="btn_clck" (click)="getData()">Click</button>
+			<div class="boxs" [ngStyle]="stylebx">
+				<h3>Example</h3>
+
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,33 @@
+.wraper {
+  border:1px solid #000;
+  padding: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+}
+
+.btn_clck {
+  display: inline-block;
+  background: #009688;
+  border:none;
+  padding:8px 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  font-size: 18px;
+  font-family: arial;
+  outline:0;
+  color:#fff;
+}
+
+.boxs2 {
+ background: #009688;
+}
+
+.boxs1 {
+  background:#6585ff;
+}
+
+.fsize {
+  color:#000;
+}

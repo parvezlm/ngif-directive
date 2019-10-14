@@ -1,0 +1,15 @@
+<section class="examTwo boxs examcomm">
+	<div class="container">
+		<div class="inner">
+      <input type="text" class="form-control" placeholder="Enter value" #inval (keyup)="showData(inval)" [(ngModel)]="data">
+      <div *ngIf="show then exmp1 else exmp2" ></div>
+      <ng-template #exmp1>
+        <p [ngClass]="mulclass">Input box is empty</p>
+      </ng-template>
+      <ng-template #exmp2>
+        <p [ngClass]="mulclass">Input value is: {{data}}</p>
+      </ng-template>
+    </div>
+
+	</div>
+</section>

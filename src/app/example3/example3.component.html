@@ -1,0 +1,52 @@
+<section class="examThree boxs examcomm">
+	<div class="container">
+		<div class="inner">
+			<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label>First name</label>
+							<input type="text" class="form-control" name="fname" [(ngModel)]="fname" required>
+						</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Last name</label>
+								<input type="text" class="form-control" name="lname" [(ngModel)]="lname" required>
+						</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Email</label>
+									<input type="email" class="form-control" name="email" [(ngModel)]="email" required>
+						</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Phone</label>
+										<input type="number" class="form-control" name="phone" [(ngModel)]="phone" required>
+						</div>
+									</div>
+								</div>
+								<button type="submit" class="submit_btn">Submit</button>
+			</form>
+
+			<div class="tablebx">
+				<table>
+					<tr>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Email</th>
+						<th>Phone</th>
+					</tr>
+					<tr *ngFor='let emp of employees'>
+						<td>{{emp.fname}}</td>
+						<td>{{emp.lname}}</td>
+						<td>{{emp.email}}</td>
+						<td>{{emp.phone}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>

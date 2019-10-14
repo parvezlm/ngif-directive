@@ -1,0 +1,14 @@
+table {
+  width:100%;
+  margin-top: 20px;
+  border:1px solid #555;
+}
+
+table tr {
+  border-bottom:1px solid #555;
+}
+
+table tr th,table tr td {
+  padding:10px 15px;
+}
+
